@@ -10,6 +10,6 @@ Feature: E2E: JeFit
   Scenario: User Login
     Given framework logins as an user
 
-  @scenarioTermsOfUse
+  @scenarioTermsOfUses
   Scenario: Terms of Use Open
   Given framework open the "SIGNUP" page
