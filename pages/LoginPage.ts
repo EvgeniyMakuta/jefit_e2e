@@ -5,7 +5,7 @@ import * as pages from "../pages/index"
 export const elements = {
     loginField: (name: "username" | "password"): WebElement => $(`#navbar_${name}`),
     loginSubmit: (): WebElement => $(".loginblueButton1"),
-    signUpBtn: (): WebElement => $(`[href=${URL.signUp}]`),
+    signUpBtn: (): WebElement => $(`[href=${URL.signup}]`),
     forgotPass: (): WebElement => $("#forgotpasswordlogin"),
     rememberMe: (): WebElement => $("#cb_cookieuser_navbar"),
 }
