@@ -1,0 +1,118 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660058947195' stop='1660058963980'>
+    <name>E2E: JeFit: User Login</name>
+    <title>E2E: JeFit: User Login</title>
+    <test-cases>
+        <test-case start='1660058947196' status='passed' stop='1660058947332'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.79'/>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.79'/>
+            </parameters>
+            <steps>
+                <step start='1660058947199' status='passed' stop='1660058947332'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='31de6bfc-d7c4-4193-885b-01123935525a-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1660058947333' status='broken' stop='1660058963979'>
+            <name>Given framework logins as an user</name>
+            <title>Given framework logins as an user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.79'/>
+            </parameters>
+            <steps>
+                <step start='1660058947334' status='passed' stop='1660058953877'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='296aa188-03d4-4f62-ab0a-edbf5314b9d1-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660058953878' status='passed' stop='1660058953891'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='897b2e9e-7939-4d5b-b236-aa50ecf2ec5b-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='2df35d7b-d893-494d-8e63-4f0c80048b5b-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660058953895' status='passed' stop='1660058953929'>
+                    <name>POST /session/:sessionId/element/ea08284a-8bd9-437c-90e8-5e0e250932eb/click</name>
+                    <title>POST /session/:sessionId/element/ea08284a-8bd9-437c-90e8-5e0e250932eb/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660058953930' status='passed' stop='1660058953963'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='75ab6b22-3057-4d3e-a7b4-d1640b2bf133-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='0e625dae-352e-4230-a6e2-ceff5b2af16a-attachment.json' type='application/json' size='1942'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660058953967' status='passed' stop='1660058953990'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='f6c52959-665f-439f-aa10-3bb07e95f5d2-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='fcbc0638-f5d1-41b7-80b8-e9c849766070-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660058954469' status='broken' stop='1660058963979'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='bdfd0bb6-6f83-45bb-a17d-ad5c3b90737d-attachment.json' type='application/json' size='60'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call setValue on element with selector "#navbar_username" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "#navbar_username" because element wasn't found
+                    at async LoginPage.login (/Users/evgeniy/IdeaProjects/TSDiploma/jefit_e2e/pages/LoginPage.ts:15:9)
+                    at async World.&lt;anonymous> (/Users/evgeniy/IdeaProjects/TSDiploma/jefit_e2e/steps/commonSteps.ts:26:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1660058963979' status='passed' stop='1660058963980'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.79'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

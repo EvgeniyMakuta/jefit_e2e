@@ -1,0 +1,105 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660058890133' stop='1660058904232'>
+    <name>E2E: JeFit: User Login</name>
+    <title>E2E: JeFit: User Login</title>
+    <test-cases>
+        <test-case start='1660058890134' status='passed' stop='1660058890136'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.79'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1660058890136' status='broken' stop='1660058904231'>
+            <name>Given framework logins as an user</name>
+            <title>Given framework logins as an user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.79'/>
+            </parameters>
+            <steps>
+                <step start='1660058890138' status='passed' stop='1660058894140'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a007b44f-c309-41e7-951d-b52618dc4ebe-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660058894141' status='passed' stop='1660058894155'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e359fe10-02b4-407d-98ab-f02b4d7226c9-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='52efd52e-c264-42b4-970a-f878e2894aa3-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660058894159' status='passed' stop='1660058894207'>
+                    <name>POST /session/:sessionId/element/da50b0aa-eb1e-4ffe-a4ea-af7443486760/click</name>
+                    <title>POST /session/:sessionId/element/da50b0aa-eb1e-4ffe-a4ea-af7443486760/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660058894207' status='passed' stop='1660058894220'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='1ce9b6ea-b32a-4e28-8d9a-533d768d99bf-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='c9f67468-78d8-4354-9f6e-2330695fa3dd-attachment.json' type='application/json' size='1942'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660058894223' status='passed' stop='1660058894231'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='86793c17-85f8-40e5-9617-0a2709271b5d-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='6fcbe34d-287c-4dc8-8b16-22c1a1290daa-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660058894725' status='broken' stop='1660058904230'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='d7c49ab0-8f49-444e-adb2-aadca4062ade-attachment.json' type='application/json' size='60'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call setValue on element with selector "#navbar_username" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "#navbar_username" because element wasn't found
+                    at async LoginPage.login (/Users/evgeniy/IdeaProjects/TSDiploma/jefit_e2e/pages/LoginPage.ts:15:9)
+                    at async World.&lt;anonymous> (/Users/evgeniy/IdeaProjects/TSDiploma/jefit_e2e/steps/commonSteps.ts:26:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1660058904231' status='passed' stop='1660058904231'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.79'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

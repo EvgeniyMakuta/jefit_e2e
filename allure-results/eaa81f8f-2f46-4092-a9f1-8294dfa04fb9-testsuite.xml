@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660047728661' stop='1660047733183'>
+    <name>E2E: JeFit: test</name>
+    <title>E2E: JeFit: test</title>
+    <test-cases>
+        <test-case start='1660047728662' status='passed' stop='1660047728663'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.79'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1660047728663' status='broken' stop='1660047733182'>
+            <name>Given framework creates new user</name>
+            <title>Given framework creates new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.79'/>
+            </parameters>
+            <steps>
+                <step start='1660047728666' status='broken' stop='1660047733182'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='ac47d13b-f2cd-4b0f-ace7-335fc81ff0d7-attachment.json' type='application/json' size='44'/>
+                    </attachments>
+                    <steps>
+                        <step start='1660047733175' status='broken' stop='1660047733182'>
+                            <name>DELETE /session/:sessionId</name>
+                            <title>DELETE /session/:sessionId</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>RequestError: socket hang up</message>
+                <stack-trace>RequestError: socket hang up
+                    at ClientRequest.&lt;anonymous> (/Users/evgeniy/IdeaProjects/TSDiploma/jefit_e2e/node_modules/got/dist/source/core/index.js:970:111)
+                    at Object.onceWrapper (node:events:642:26)
+                    at ClientRequest.emit (node:events:539:35)
+                    at ClientRequest.emit (node:domain:475:12)
+                    at ClientRequest.origin.emit (/Users/evgeniy/IdeaProjects/TSDiploma/jefit_e2e/node_modules/@szmarczak/http-timer/dist/source/index.js:43:20)
+                    at Socket.socketOnEnd (node:_http_client:478:9)
+                    at Socket.emit (node:events:539:35)
+                    at Socket.emit (node:domain:475:12)
+                    at endReadableNT (node:internal/streams/readable:1345:12)
+                    at connResetException (node:internal/errors:692:14)
+                    at Socket.socketOnEnd (node:_http_client:478:23)
+                    at Socket.emit (node:events:539:35)
+                    at Socket.emit (node:domain:475:12)
+                    at endReadableNT (node:internal/streams/readable:1345:12)
+                    at processTicksAndRejections (node:internal/process/task_queues:83:21)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1660047733182' status='passed' stop='1660047733182'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.79'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
