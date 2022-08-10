@@ -3,6 +3,7 @@ import * as pages from "../pages/index"
 import { PageFactory } from "../pageFactory/pageFactory";
 import { World} from "../utils/types";
 import { URL } from "../utils/urls"
+import {Page, PageKey} from "../utils/enums";
 
 Given('framework creates new user', async function (this: World) {
     const basePage = await PageFactory.getPage("BASE") as pages.base.BasePage;
@@ -24,5 +25,10 @@ Given('framework logins as an user', async function (this: World) {
     await browser.url(URL.base);
     await pages.home.elements.loginBtn().click();
     await loginPage.login(this);
+});
+
+Given('framework open the {string} page', async (page: PageKey) => {
+    const basePage = await PageFactory.getPage("BASE") as pages.base.BasePage;
+    await basePage.openPage(page);
 })
 

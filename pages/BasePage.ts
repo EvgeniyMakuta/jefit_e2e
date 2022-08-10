@@ -1,6 +1,7 @@
 import { World } from "../utils/types";
 import { PageFactory } from "../pageFactory/pageFactory";
 import * as pages from "./index";
+import {Page, PageKey} from "../utils/enums";
 
 export class BasePage {
 
@@ -17,5 +18,9 @@ export class BasePage {
 
    public async log(message): Promise<void> {
         console.log(message)
+   }
+
+   public async openPage(name: PageKey): Promise<void> {
+        await browser.url(URL[Page[name]]);
    }
 }

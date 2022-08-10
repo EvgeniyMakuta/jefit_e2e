@@ -1,6 +1,6 @@
 export enum User {
-    USERNAME = "evgeniy_user",
-    PASSWORD = "1q2w3e4r"
+    USERNAME = "test009",
+    PASSWORD = "Werq1234$"
 }
 
 export enum WrongUser {
@@ -15,3 +15,10 @@ export enum Pages {
     HOME = "HomePage",
 }
 export type PagesKey = keyof typeof Pages;
+
+export enum Page {
+    LOGIN = "login",
+    SIGNUP = "signup",
+    HOME = "base",
+}
+export type PageKey = keyof typeof Page;
