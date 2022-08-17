@@ -1,7 +1,7 @@
 import { Given, Then } from "@wdio/cucumber-framework"
 import * as pages from "../pages/index"
 import { PageFactory } from "../pageFactory/pageFactory";
-import { World} from "../utils/types";
+import { World} from "../utils/worldInterface";
 import { URL } from "../utils/urls"
 import { Page, User } from "../utils/enums";
 import { PageKey } from "../utils/types"

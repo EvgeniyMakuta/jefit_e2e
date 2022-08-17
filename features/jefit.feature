@@ -1,12 +1,12 @@
 @e2e @init
 Feature: E2E: JeFit
 
-  @scenarioNewUserCreate
+  @scenarioNewUserCreate @skip()
   Scenario: New User Create
     Given framework creates new user
     Then new user should be created
 
-  @scenarioUserLogin
+  @scenarioUserLogin @skip()
   Scenario: User Login
     Given framework logins as an user
     Then user should be logged in

@@ -1,4 +1,4 @@
-import { World } from "../utils/types";
+import { World } from "../utils/worldInterface";
 import { PageFactory } from "../pageFactory/pageFactory";
 import * as pages from "./index";
 import { URL } from "../utils/urls"
