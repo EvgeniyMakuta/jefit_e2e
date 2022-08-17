@@ -1,4 +1,6 @@
-import { Pages, PagesKey } from "../utils/enums";
+import { Pages } from "../utils/enums";
+import { PagesKey } from "../utils/types";
+
 import * as pages from "../pages/index"
 
 export class PageFactory {

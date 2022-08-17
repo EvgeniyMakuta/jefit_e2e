@@ -1,24 +1,19 @@
 export enum User {
     USERNAME = "test009",
-    PASSWORD = "Werq1234$"
+    PASSWORD = "Werq1234$",
+    EMAIL = "test0099@gmail.com",
+    WRONG_USERNAME = "wewewe",
+    WRONG_PASSWORD = "111111"
 }
-
-export enum WrongUser {
-    WRONG_USERNAME = "test",
-    WRONG_PASSWORD = "werq1234"
-}
-
 export enum Pages {
     BASE = "BasePage",
     LOGIN = "LoginPage",
     SIGNUP = "SignUpPage",
     HOME = "HomePage",
 }
-export type PagesKey = keyof typeof Pages;
 
 export enum Page {
     LOGIN = "login",
     SIGNUP = "signup",
     HOME = "base",
 }
-export type PageKey = keyof typeof Page;

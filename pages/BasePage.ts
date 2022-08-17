@@ -1,7 +1,7 @@
 import { World } from "../utils/types";
 import { PageFactory } from "../pageFactory/pageFactory";
 import * as pages from "./index";
-import {Page, PageKey} from "../utils/enums";
+import { URL } from "../utils/urls"
 
 export class BasePage {
 
@@ -20,7 +20,7 @@ export class BasePage {
         console.log(message)
    }
 
-   public async openPage(name: PageKey): Promise<void> {
-        await browser.url(URL[Page[name]]);
+   public async openPage(name: string): Promise<void> {
+        await browser.url(URL[name]);
    }
 }
