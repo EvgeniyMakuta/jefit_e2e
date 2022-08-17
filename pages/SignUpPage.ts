@@ -13,8 +13,8 @@ export const elements = {
     captchaIframe: (): WebElement => $("[title=reCAPTCHA]"),
     captchaCheck: (): WebElement => $("[aria-checked=true]"),
     welcomeModal: (): WebElement => $("#myModal"),
-
-
+    termsOfUsesLink: (): WebElement => $("[href='http://www.jefit.com/support/terms-of-use/']"),
+    privacyPolicy: (): WebElement => $("[href='http://www.jefit.com/support/privacy-policy/']"),
 }
 
 export class SignUpPage extends pages.base.BasePage {

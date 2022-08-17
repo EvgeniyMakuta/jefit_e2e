@@ -1,4 +1,4 @@
-import { WebElement, World } from "../utils/types";
+import { WebElement } from "../utils/types";
 import { URL } from "../utils/urls"
 import * as pages from "../pages/index"
 
@@ -8,12 +8,17 @@ export const elements = {
     signUpBtn: (): WebElement => $(`[href=${URL.signup}]`),
     forgotPass: (): WebElement => $("#forgotpasswordlogin"),
     rememberMe: (): WebElement => $("#cb_cookieuser_navbar"),
+    errorLoginMsg: (): WebElement => $("#invalidpassworderrormessage"),
+    resetPassword: (): WebElement => $("#reset-btn"),
+    errorMsg: (): WebElement => $(".error-message"),
+    successMsg: (): WebElement => $(".success-message"),
+    emailField: (): WebElement => $("#email")
 }
 
 export class LoginPage extends pages.base.BasePage {
-    public async login(user: World): Promise<void> {
-        await elements.loginField("username").setValue(user.username);
-        await elements.loginField("password").setValue(user.password);
+    public async login(username: string, password: string): Promise<void> {
+        await elements.loginField("username").setValue(username);
+        await elements.loginField("password").setValue(password);
         await elements.loginSubmit().click();
     }
 }
